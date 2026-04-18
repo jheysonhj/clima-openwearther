@@ -1,0 +1,64 @@
+:root {
+    --neon-blue: #00f2ff;
+    --dark-bg: #050505;
+    --card-bg: #0a0a0c;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.main-card {
+    max-width: 500px;
+    background: var(--card-bg);
+    border: 2px solid var(--neon-blue);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.2);
+}
+
+.neon-text {
+    color: var(--neon-blue);
+    text-shadow: 0 0 10px var(--neon-blue);
+    font-weight: bold;
+}
+
+.shadow-neon {
+    border: 1px solid var(--neon-blue);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.btn-neon {
+    background-color: var(--neon-blue);
+    color: black;
+    font-weight: bold;
+}
+
+.btn-neon:hover {
+    background-color: white;
+    box-shadow: 0 0 15px white;
+}
+
+.weather-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 5px solid var(--neon-blue);
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+    animation: fadeIn 0.5s ease;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #ff4d4d;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
